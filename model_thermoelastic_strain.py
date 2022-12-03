@@ -42,8 +42,7 @@ data_QCint = df_model.index[data_QCidx].astype(object) #integers for indexing
 m_mu= -10000        #m  --> Murnaghan constant #mu --> shear modulus
 k=(2*np.pi)/20000   #k  --> horizontal wavenumber -- wavelength of surface temperture variation
 x= 1                #x  --> horizontal position
-y= 0.5                #y  --> depth [m] --> 0 close to the surface a
-#t = 1              #t  --> time
+y= 0.5              #y  --> depth [m] --> 0 close to the surface a
 v=0.3               #v  --> Poisson's ratio
 alpha_th=10**-5     #alpha_th --> coefficient of thermal expansion
 T0=15               #T0  --> half annual peak-to-peak mean surface temperature variation
@@ -51,6 +50,7 @@ K=10**-6            #K   --> thermal diffusivity m^2/s
 w=2*10**-7          #w   --> frequency /s
 per=(2*np.pi)/w     #per --> tau=2pi/w, period
 delta_t=(y/2)*np.sqrt(per/(np.pi*K))+(per/8) #delta_t --> lag between surface temp and strain
+#t                  #t  --> time
 #delta_t=y/np.sqrt(2*w*K)+(np.pi/(4*w))
 
 #-preallocate dataframe
