@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 import numpy as np
 import pandas as pd
-import scipy
-from obspy.signal.util import smooth
 import matplotlib.pyplot as plt
 from obspy.core import UTCDateTime as UTC
 import matplotlib.dates as dates
